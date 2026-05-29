@@ -18,24 +18,26 @@ However, to ensure **100% empirical reproducibility and academic transparency**,
 
 ```text
 J-Trust-Evaluation-Suite/
-├── README.md                      # This documentation
+├── README.md                                   # This documentation
 ├── contracts/
-│   └── IJTrustInterfaces.sol      # Smart contract public interfaces (ABIs)
-├── raw_data/
-│   ├── deepjiandu_sample_metadata.json # Sampled metadata based on CIDOC CRM
-│   ├── fig3_time_consumption.csv  # Cryptographic micro-benchmark logs
-│   ├── fig4_comm_overhead.csv     # Network communication overhead logs
-│   ├── fig5_verification.csv      # Consensus nodes vs verification time logs
-│   ├── fig6_decryption.csv        # Policy attributes vs CP-ABE decryption logs
-│   ├── fig7_throughput.csv        # Macro-system throughput (TPS) logs
-│   ├── fig8_latency.csv           # Macro-system processing latency logs
-│   ├── fig9_stacked_area.csv      # Dual-chain synergy batch logs
-│   ├── fig10_radar.csv            # Multi-dimensional capability evaluation
-│   ├── fig11_zkp_overhead.csv     # ZKP prover/verifier computational logs
-│   └── table4_smart_contract_gas_profiler.csv  # Native EVM/FISCO BCOS Gas consumption logs for Table 4
-└── benchmarks/
-    ├── fisco_bcos_load_tester.py  # Prototype of the asynchronous RPC load tester
-    └── reproduce_figures.py       # Data-driven plotting script (Parses CSV to Figures)
+│   └── IJTrustInterfaces.sol                   # Smart contract public interfaces (ABIs)
+├── zkp_circuits/
+│   └── CrossChainSync.circom                   # Reference R1CS circuit configuration (Groth16/BN254)
+├── benchmarks/
+│   ├── fisco_bcos_load_tester.py               # Prototype of the asynchronous RPC load tester
+│   └── reproduce_figures.py                    # Data-driven plotting script (Parses CSV to Figures)
+└── raw_data/
+    ├── deepjiandu_sample_metadata.json         # Sampled metadata strictly compliant with CIDOC CRM
+    ├── table4_smart_contract_gas_profiler.csv  # Native EVM/FISCO BCOS Gas consumption logs
+    ├── fig3_time_consumption.csv               # Cryptographic micro-benchmark logs
+    ├── fig4_comm_overhead.csv                  # Network communication overhead logs
+    ├── fig5_verification.csv                   # Consensus nodes vs verification time logs
+    ├── fig6_decryption.csv                     # Policy attributes vs CP-ABE decryption logs
+    ├── fig7_throughput.csv                     # Macro-system throughput (TPS) logs
+    ├── fig8_latency.csv                        # Macro-system processing latency logs
+    ├── fig9_stacked_area.csv                   # Dual-chain synergy batch logs
+    ├── fig10_radar.csv                         # Multi-dimensional capability evaluation
+    └── fig11_zkp_overhead.csv                  # ZKP prover/verifier computational logs
 ```
 
 ## 🚀How to Reproduce the Figures
