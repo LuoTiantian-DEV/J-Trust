@@ -39,7 +39,7 @@ J-Trust-Evaluation-Suite/
 ```
 
 ## 🚀How to Reproduce the Figures
-We strictly avoid using inline hardcoded arrays for our performance evaluation. All figures (Fig 3 to Fig 11) in the manuscript are generated dynamically by parsing the raw CLI-style logs located in the raw_data/ directory.
+We strictly avoid using inline hardcoded arrays for our performance evaluation. All figures (Fig 3 to Fig 10) in the manuscript are generated dynamically by parsing the raw CLI-style logs located in the raw_data/ directory.
 
 ## Prerequisites
 Ensure you have Python 3.8+ installed along with the required data science libraries:
