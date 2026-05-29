@@ -61,5 +61,9 @@ The script will utilize a custom load_cli_csv function to clean the terminal tag
 
 All generated figures will be automatically saved in high-quality formats (PNG, PDF, and EPS) in a newly created generated_figures/ directory. Notably, the macro-system throughput and latency charts (Fig 7 & Fig 8) will be plotted with explicit Standard Deviation Error Bars to demonstrate the network jitter observed during physical cluster testing.
 
-## 📜 Dataset Provenance
-The payload data used for the RPC stress testing in this evaluation suite was sampled from the DeepJiandu Dataset (https://doi.org/10.57760/sciencedb.08560). The metadata structure strictly complies with the international CIDOC CRM ontology standards for cultural heritage interoperability.
+## Dataset Provenance & Standards
+Dataset: The payload data used for the RPC stress testing in this evaluation suite was sampled from the DeepJiandu Dataset (https://doi.org/10.57760/sciencedb.08560).
+
+Ontology: The metadata structure strictly complies with the international CIDOC CRM ontology standards (ISO 21127:2014) for cultural heritage interoperability.
+
+Cryptography: ZKP parameters are standardized over the BN254 (ALT_BN128) elliptic curve, maintaining EVM compatibility.
