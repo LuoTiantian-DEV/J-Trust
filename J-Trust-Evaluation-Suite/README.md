@@ -67,3 +67,5 @@ Dataset: The payload data used for the RPC stress testing in this evaluation sui
 Ontology: The metadata structure strictly complies with the international CIDOC CRM ontology standards (ISO 21127:2014) for cultural heritage interoperability.
 
 Cryptography: ZKP parameters are standardized over the BN254 (ALT_BN128) elliptic curve, maintaining EVM compatibility.
+
+Ablation Study Validation: The repository now includes the raw logs (table5_ablation_study.csv) verifying the quantitative necessity of the dual-chain and cryptographic modules. The accompanying scripts process this data to explicitly output the performance degradation (TPS drop and Gas cost explosion) when specific privacy or scaling mechanisms are disabled.
